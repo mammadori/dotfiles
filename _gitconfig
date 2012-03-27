@@ -1,0 +1,24 @@
+[user]
+	name = Marco Amadori
+	email = marco.amadori@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[alias]
+	st = status
+	wc = whatchanged
+	locate = !sh -c 'git ls-files $(git rev-parse --show-cdup) | grep --color=auto "$1"' -
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = ls-files
+
+[push]
+	default = matching
+
