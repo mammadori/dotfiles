@@ -262,7 +262,9 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " ==========================================================
 " Javascript
 " ==========================================================
-au BufRead *.js set makeprg=jslint\ %
+au BufRead *.js setlocal ft=javascript
+au FileType javascript setlocal expandtab! shiftwidth=4 tabstop=8 softtabstop=4
+au FileType javascript set makeprg=jslint\ %
 
 " Don't allow snipmate to take over tab
 autocmd VimEnter * ino <c-j> <c-r>=TriggerSnippet()<cr>
