@@ -1,2 +1,5 @@
 [ui]
-username = mammadori <marco.amadori@gmail.com>
+username = Marco Amadori <marco.amadori@gmail.com>
+
+[extensions]
+convert =
