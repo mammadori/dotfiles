@@ -333,7 +333,7 @@ set tags=tags;/
 set tags+=/usr/local/share/ctags/system.tags
 "set tags+=/home/marco/git/comtrend_api/tags
 
-set mouse=a
+set mouse=n
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

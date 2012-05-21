@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/marco/.vim'
-let g:netrw_dirhist_2='/home/marco/git/gitolite-admin/conf'
-let g:netrw_dirhist_3='/home/marco/src/git/dbpedia_extraction_framework/scripts'
-let g:netrw_dirhist_4='/home/marco/src/spring/obj-x86_64-linux-gnu/rts/CMakeFiles'
