@@ -115,3 +115,5 @@ stty start undef
 #PYTHONSTARTUP=~/.pythonrc.py
 #export PYTHONSTARTUP
 
+# emacs editing mode
+set -o emacs
