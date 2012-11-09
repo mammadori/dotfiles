@@ -24,6 +24,11 @@ else
     done
 fi
 
+if [ -e .kde/share/kde4/services/ServiceMenus/dropboxpublic.desktop ]; then
+    mv .kde/share/kde4/services/ServiceMenus/dropboxpublic.desktop{,.bak}
+fi
+ln -sf ${PWD}/dropboxpublic.desktop ${HOME}.kde/share/kde4/services/ServiceMenus # FIXME: if you need this another time, do a function
+
 git submodule sync
 git submodule init
 git submodule update

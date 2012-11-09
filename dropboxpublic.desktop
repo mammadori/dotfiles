@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/octet-stream
+Actions=CopyPublicLink
+Encoding=UTF-8
+Version=0.1
+
+[Desktop Action CopyPublicLink]
+Name=Copy public link
+Name[it]=Copia il link pubblico
+Name[de]=Public-link in die Zwischenablage kopieren
+Icon=klipper
+Exec=dbus-send --type=method_call --dest=org.kde.klipper /klipper org.kde.klipper.klipper.setClipboardContents string:`dropbox puburl %f`
+
