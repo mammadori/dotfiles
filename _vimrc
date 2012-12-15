@@ -237,11 +237,13 @@ if has("gui_running")
     colorscheme desert
     " Remove menu bar
     "set guioptions-=m
+    set mouse=a
 
     " Remove toolbar
     "set guioptions-=T
 else
     colorscheme torte
+    set mouse=n
 endif
 
 " Paste from clipboard
@@ -332,8 +334,6 @@ map <C-Right> :bn<CR>
 set tags=tags;/
 set tags+=/usr/local/share/ctags/system.tags
 "set tags+=/home/marco/git/comtrend_api/tags
-
-set mouse=n
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
