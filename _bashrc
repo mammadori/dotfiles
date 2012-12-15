@@ -125,6 +125,10 @@ avirename ()
 	else
 		DONT="-n"
 	fi
-	echo rename $DONT 's/[sS]?([\d]{2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/ *.{mp4,avi,mkv}'
-	rename $DONT 's/[sS]?([\d]{2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/' *.{mp4,avi,mkv}
+
+	echo rename $DONT 's/[sS]?([\d]{1,2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/ *.{mp4,avi,mkv}'
+	rename -n 's/[sS]?([\d]{1,2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/' *.{mp4,avi,mkv}
+	if [ -n "${DONT}" ] ; then
+		rename 's/[sS]?([\d]{1,2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/' *.{mp4,avi,mkv}
+	fi
 }
