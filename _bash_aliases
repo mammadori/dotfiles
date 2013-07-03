@@ -18,3 +18,6 @@ alias t='vim -c ":$" ~/.todo'
 alias todo='cat ~/.todo'
 alias svnlog='svn log -v'
 alias mvn-nt='mvn -Dmaven.test.skip=true'
+
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+

@@ -132,3 +132,10 @@ avirename ()
 		rename 's/[sS]?([\d]{1,2})[eExX]([\d]{2}).*\.(.{3})$/s$1e$2.$3/' *.{mp4,avi,mkv}
 	fi
 }
+
+ifdownup ()
+{
+    iface=$1
+    sudo ifdown $iface
+    sudo ifup $iface
+}
