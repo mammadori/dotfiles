@@ -139,3 +139,9 @@ ifdownup ()
     sudo ifdown $iface
     sudo ifup $iface
 }
+
+# TMUX stays in virtualenvs:
+if [ -n "${VIRTUAL_ENV}" ]; then
+      . "${VIRTUAL_ENV}/bin/activate"
+fi
+
