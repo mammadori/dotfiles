@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Highly inspired from sontek (John Anderson) dotfiles
 
+if [ ! -d ~/.vimundo ] ; then
+    mkdir ~/.vimundo
+fi
+
 function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
