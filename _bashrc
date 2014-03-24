@@ -145,3 +145,5 @@ if [ -n "${VIRTUAL_ENV}" ]; then
       . "${VIRTUAL_ENV}/bin/activate"
 fi
 
+export PIP_DOWNLOAD_CACHE=/var/cache/pip
+
