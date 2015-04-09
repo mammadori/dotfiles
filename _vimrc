@@ -238,6 +238,7 @@ if has("gui_running")
     " Remove menu bar
     "set guioptions-=m
     set mouse=a
+    set guifont=Monospace\ 12
 
     " Remove toolbar
     "set guioptions-=T
