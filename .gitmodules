@@ -42,7 +42,7 @@
 	url = https://github.com/vim-scripts/The-NERD-tree.git
 [submodule "_vim/bundle/ropevim"]
 	path = _vim/bundle/ropevim
-	url = https://github.com/sontek/rope-vim.git
+	url = https://github.com/klen/rope-vim.git
 [submodule "_vim/bundle/acp"]
 	path = _vim/bundle/acp
 	url = https://github.com/vim-scripts/AutoComplPop.git
