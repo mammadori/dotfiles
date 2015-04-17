@@ -140,10 +140,15 @@ ifdownup ()
     sudo ifup $iface
 }
 
-# TMUX stays in virtualenvs:
+# TMUX stays in virtualenvs: FIME: does not work
 if [ -n "${VIRTUAL_ENV}" ]; then
       . "${VIRTUAL_ENV}/bin/activate"
 fi
 
-export PIP_DOWNLOAD_CACHE=/var/cache/pip
+if [ -d /var/cache/pip ]; then
+    export PIP_DOWNLOAD_CACHE=/var/cache/pip
+fi
 
+if [ -d "${HOME}/.pip/cache" ]; then 
+    export PIP_DOWNLOAD_CACHE="${HOME}/.pip/cache"
+fi
