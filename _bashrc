@@ -140,6 +140,12 @@ ifdownup ()
     sudo ifup $iface
 }
 
+cless ()
+{
+    LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s" less -R "$@" ;
+}
+
+
 # TMUX stays in virtualenvs: FIME: does not work
 if [ -n "${VIRTUAL_ENV}" ]; then
       . "${VIRTUAL_ENV}/bin/activate"
