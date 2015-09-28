@@ -25,3 +25,10 @@ fi
 if [ -d "/usr/lib/ccache" ] ; then
    PATH="/usr/lib/ccache:$PATH"
 fi
+
+ANDROID_HOME="$HOME/Android/Sdk"
+# check if exists
+if [ -d "$ANDROID_HOME" ] ; then
+    export ANDROID_HOME
+    export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+fi
