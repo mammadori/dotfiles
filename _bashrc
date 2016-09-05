@@ -106,6 +106,7 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER "$(history 
 eternalgrep () { grep "$1" ~/.bash_eternal_history; }
 
 alias sofia='apt-get moo'
+alias achille='display ~/t/Creeper.svg'
 
 # Flow Control conflicts with Forward history search (Control-S)
 stty -ixon

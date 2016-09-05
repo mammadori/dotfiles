@@ -20,7 +20,7 @@
 	ls = ls-files
 
 [push]
-	default = matching
+	default = simple
 
 [core]
 	autocrlf = input
