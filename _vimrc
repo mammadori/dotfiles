@@ -293,7 +293,7 @@ au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\
 "let g:pyflakes_use_quickfix = 0
 
 " Add the virtualenv's site-packages to vim path
-py << EOF
+py3 << EOF
 import os.path
 import sys
 import vim
