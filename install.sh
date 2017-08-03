@@ -42,11 +42,8 @@ fi
 link_file "${PWD}/dropboxpublic.desktop" "${HOME}/.kde/share/kde4/services/ServiceMenus/dropboxpublic.desktop"
 
 git submodule sync
-git submodule init
-git submodule update
-git submodule foreach git pull origin master
-git submodule foreach git submodule init
-git submodule foreach git submodule update
+git submodule update --init --recursive
+git submodule update --recursive
 
 # setup command-t
 cd _vim/bundle/command-t
