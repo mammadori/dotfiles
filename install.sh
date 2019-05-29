@@ -23,7 +23,7 @@ link_file () {
 
 link_home () {
     source="${PWD}/$1"
-    target="$(echo ${HOME}/${1} | tr '_' '.')"
+    target="$(echo ${HOME}/${1} | sed 's/_/./1')"
     link_file "${source}" "${target}"
 }
 
