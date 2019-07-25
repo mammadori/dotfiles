@@ -1,6 +1,7 @@
 [user]
 	name = Marco Amadori
-	email = marco.amadori@gmail.com
+	email = amadori@inbitcoin.it
+	signingkey = FD85CA493849F6FB71395A42E13F7B04ACB7F030
 [color]
 	diff = auto
 	status = auto
